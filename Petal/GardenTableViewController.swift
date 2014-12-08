@@ -122,7 +122,6 @@ class GardenTableViewController: UITableViewController, PlantFlowerDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         switch segue.identifier! {
             case "plantFlowerSegue":
-                println("planting flower segue...")
                 var secondViewController = segue.destinationViewController as? PlantFlowerViewController
                 secondViewController?.delegate = self
                 secondViewController?.currentUser = self.currentUser
