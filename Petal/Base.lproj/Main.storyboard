@@ -137,7 +137,6 @@
                                         </state>
                                         <state key="selected" image="flower1-selected"/>
                                         <connections>
-                                            <action selector="flower1Button:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="Jl0-f8-7wZ"/>
                                             <action selector="flower1Button:" destination="lVB-nV-f8E" eventType="touchUpInside" id="VMn-sO-gIT"/>
                                         </connections>
                                     </button>
@@ -149,7 +148,6 @@
                                         <state key="selected" image="flower2-selected"/>
                                         <connections>
                                             <action selector="flower2Button:" destination="lVB-nV-f8E" eventType="touchUpInside" id="8pk-wc-GkH"/>
-                                            <action selector="flower2Button:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="sbI-db-7Be"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpf-a7-8TD">
@@ -160,7 +158,6 @@
                                         <state key="selected" image="flower3-selected"/>
                                         <connections>
                                             <action selector="flower3Button:" destination="lVB-nV-f8E" eventType="touchUpInside" id="2R9-A2-85F"/>
-                                            <action selector="flower3Button:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="DBR-v8-fVr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbY-zX-gQf">
@@ -169,7 +166,6 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="plantButton:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="fM1-PW-tQq"/>
                                             <action selector="plantButton:" destination="lVB-nV-f8E" eventType="touchUpInside" id="kyN-8j-wNh"/>
                                         </connections>
                                     </button>
@@ -203,67 +199,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eol-5p-CN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1162" y="893"/>
-        </scene>
-        <!--gardenView-->
-        <scene sceneID="u2h-qQ-VhA">
-            <objects>
-                <viewController title="gardenView" id="9rd-ND-lS7" customClass="GardenViewController" customModule="Petal" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SLQ-p0-cT7"/>
-                        <viewControllerLayoutGuide type="bottom" id="0Xv-3s-fIn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Wi6-5S-IK7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky2" translatesAutoresizingMaskIntoConstraints="NO" id="Xfd-qH-g6Q">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="AtP-bl-lZ0">
-                                <rect key="frame" x="-7" y="64" width="334" height="515"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWe-7q-310">
-                                <rect key="frame" x="168" y="432" width="90" height="95"/>
-                                <state key="normal" title="gardenPatch2" image="soil">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="soilButton2:" destination="9rd-ND-lS7" eventType="touchUpInside" id="Wgd-kW-y97"/>
-                                    <segue destination="Nb2-74-RQ8" kind="push" identifier="plantFlowerSegue" id="ikU-ZC-jfC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLj-JU-rDX">
-                                <rect key="frame" x="63" y="351" width="90" height="95"/>
-                                <state key="normal" title="gardenPatch1" image="soil">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="soilButton1:" destination="9rd-ND-lS7" eventType="touchUpInside" id="Bny-4x-fSs"/>
-                                    <segue destination="Nb2-74-RQ8" kind="push" identifier="plantFlowerSegue" id="JiM-6C-Ds4"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="GWj-i6-VXk" appends="YES" id="U1U-xJ-6qi"/>
-                        </connections>
-                    </view>
-                    <navigationItem key="navigationItem" id="evq-8N-kxq"/>
-                    <connections>
-                        <outlet property="soilButton1" destination="KLj-JU-rDX" id="g1K-O7-g1C"/>
-                        <outlet property="soilButton2" destination="WWe-7q-310" id="dO7-GB-fcC"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gZ3-nU-zXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="GWj-i6-VXk">
-                    <connections>
-                        <action selector="swipeGarden:" destination="9rd-ND-lS7" id="Un5-8Q-cPo"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="-268" y="-2643"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Qxg-RC-FoV">
@@ -316,96 +251,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKc-LK-09v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1573" y="217"/>
-        </scene>
-        <!--Plant Flower View Controller-->
-        <scene sceneID="0w5-H8-jeJ">
-            <objects>
-                <viewController id="Nb2-74-RQ8" customClass="PlantFlowerViewController" customModule="Petal" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1KP-lE-C3u"/>
-                        <viewControllerLayoutGuide type="bottom" id="jBP-1f-phi"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sDe-dE-AZv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZdQ-fF-tL0">
-                                <rect key="frame" x="45" y="158" width="231" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flower Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzK-XI-8zD">
-                                <rect key="frame" x="91" y="249" width="138" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esh-6T-uxL">
-                                <rect key="frame" x="45" y="296" width="60" height="63"/>
-                                <state key="normal" title="Button" image="flower1">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" image="flower1-selected"/>
-                                <connections>
-                                    <action selector="flower1Button:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="BlN-AO-KCN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKa-kP-SL1">
-                                <rect key="frame" x="130" y="296" width="60" height="63"/>
-                                <state key="normal" title="Button" image="flower2">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" image="flower2-selected"/>
-                                <connections>
-                                    <action selector="flower2Button:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="WdJ-0M-Nlb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-ga-NG5">
-                                <rect key="frame" x="216" y="296" width="60" height="63"/>
-                                <state key="normal" title="Button" image="flower3">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" image="flower3-selected"/>
-                                <connections>
-                                    <action selector="flower3Button:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="AHF-qa-cLv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awh-pQ-y1K">
-                                <rect key="frame" x="116" y="470" width="88" height="30"/>
-                                <state key="normal" title="Plant!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="plantButton:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="9n7-U1-ZTb"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msU-Hx-5Zw">
-                                <rect key="frame" x="69" y="117" width="183" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7v-f1-FVy">
-                                <rect key="frame" x="38" y="425" width="244" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.73424762229999996" green="0.037032161090000001" blue="0.17216343740000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Vlp-WP-nFR"/>
-                    <connections>
-                        <outlet property="errorLabel" destination="A7v-f1-FVy" id="Xhd-3E-arv"/>
-                        <outlet property="flower1" destination="Esh-6T-uxL" id="wFk-EQ-ttv"/>
-                        <outlet property="flower2" destination="HKa-kP-SL1" id="ePm-6Q-wFD"/>
-                        <outlet property="flower3" destination="BrB-ga-NG5" id="HgV-J4-B19"/>
-                        <outlet property="friendTextField" destination="ZdQ-fF-tL0" id="gnm-x8-LBu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WsY-Ya-QAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-374" y="-1534"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -902,7 +747,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="JiM-6C-Ds4"/>
-    </inferredMetricsTieBreakers>
 </document>

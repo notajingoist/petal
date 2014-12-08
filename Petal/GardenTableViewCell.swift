@@ -13,7 +13,6 @@ class GardenTableViewCell: UITableViewCell {
     
     @IBOutlet var flowerButton: UIButton!
     @IBOutlet var friendName: UILabel!
-    var flowerType: String!
 
     override func awakeFromNib() {
         super.awakeFromNib()

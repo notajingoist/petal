@@ -13,7 +13,6 @@
 		2E1AF91D19E3352100499D75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1AF91C19E3352100499D75 /* Images.xcassets */; };
 		2E1AF92019E3352100499D75 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E1AF91E19E3352100499D75 /* LaunchScreen.xib */; };
 		2E1AF92C19E3352100499D75 /* PetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1AF92B19E3352100499D75 /* PetalTests.swift */; };
-		2E236C9D1A2CE784009CEACB /* GardenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E236C9C1A2CE784009CEACB /* GardenViewController.swift */; };
 		2E28B65F19ECAA77002593C1 /* pluck-short.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E28B65D19ECAA77002593C1 /* pluck-short.mp3 */; };
 		2E28B66019ECAA77002593C1 /* route29.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E28B65E19ECAA77002593C1 /* route29.mp3 */; };
 		2E38F5011A2CF431001628EF /* PlantFlowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E38F5001A2CF431001628EF /* PlantFlowerViewController.swift */; };
@@ -58,7 +57,6 @@
 		2E1AF92519E3352100499D75 /* PetalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1AF92A19E3352100499D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E1AF92B19E3352100499D75 /* PetalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetalTests.swift; sourceTree = "<group>"; };
-		2E236C9C1A2CE784009CEACB /* GardenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GardenViewController.swift; sourceTree = "<group>"; };
 		2E28B65D19ECAA77002593C1 /* pluck-short.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pluck-short.mp3"; sourceTree = "<group>"; };
 		2E28B65E19ECAA77002593C1 /* route29.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = route29.mp3; sourceTree = "<group>"; };
 		2E38F5001A2CF431001628EF /* PlantFlowerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantFlowerViewController.swift; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 				2E1AF91519E3352100499D75 /* AppDelegate.swift */,
 				2E1AF91719E3352100499D75 /* ViewController.swift */,
 				2E1AF91919E3352100499D75 /* Main.storyboard */,
-				2E236C9C1A2CE784009CEACB /* GardenViewController.swift */,
 				2EBAA2BF1A2C1D5E00EFC29F /* LoginViewController.swift */,
 				2E1AF91C19E3352100499D75 /* Images.xcassets */,
 				2E1AF91E19E3352100499D75 /* LaunchScreen.xib */,
@@ -308,7 +305,6 @@
 				2E8C3BC71A350AC000473D04 /* GardenTableViewController.swift in Sources */,
 				2E38F5011A2CF431001628EF /* PlantFlowerViewController.swift in Sources */,
 				2EBAA2C01A2C1D5E00EFC29F /* LoginViewController.swift in Sources */,
-				2E236C9D1A2CE784009CEACB /* GardenViewController.swift in Sources */,
 				2E8C3BCF1A350E0100473D04 /* GardenTableViewCell.swift in Sources */,
 				2E1AF91819E3352100499D75 /* ViewController.swift in Sources */,
 				2E1AF91619E3352100499D75 /* AppDelegate.swift in Sources */,

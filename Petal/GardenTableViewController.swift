@@ -103,49 +103,9 @@ class GardenTableViewController: UITableViewController, PlantFlowerDelegate {
         cell.flowerButton.selected = true
         cell.flowerButton.setImage(flowerImage, forState: UIControlState.Normal)
         cell.flowerButton.setTitle(flowerType, forState: UIControlState.Normal)
-        cell.flowerType = flowerType
         
         return cell
     }
-    
-    /*override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
-        //        if let btn = sender as? UIButton {
-        //            if (identifier! == "plantFlowerSegue") {
-        //                if (btn.selected) {
-        //                    return false
-        //                } else {
-        //                    return true
-        //                }
-        //            } else if (identifier! == "showFlowerSegue") {
-        //                if (btn.selected) {
-        //                    return true
-        //                } else {
-        //                    return false
-        //                }
-        //            }
-        //        }
-        
-        
-        /*if (identifier! == "plantFlowerSegue") {
-            if let btn = sender as? UIButton {
-                if (btn.selected) {
-                    var gardenPatchName = btn.titleLabel!.text
-                    if (gardenPatchName != nil) {
-                        var segueName = self.gardenPatches[gardenPatchName!]
-                        self.performSegueWithIdentifier(segueName! + "Segue", sender: self)
-                        
-                    } else {
-                        println("Doesn't exist for some reason...")
-                    }
-                    //self.performSegueWithIdentifier("flower1Segue", sender: self)
-                    
-                    return false
-                }
-            }
-        }*/
-        return true
-    }*/
-
     
     @IBAction func showFlowerButton(sender: AnyObject) {
         if (sender.currentTitle == "flower1") {
