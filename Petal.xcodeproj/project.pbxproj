@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E1AF91619E3352100499D75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1AF91519E3352100499D75 /* AppDelegate.swift */; };
+		2E1AF91819E3352100499D75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1AF91719E3352100499D75 /* ViewController.swift */; };
+		2E1AF91B19E3352100499D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1AF91919E3352100499D75 /* Main.storyboard */; };
+		2E1AF91D19E3352100499D75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1AF91C19E3352100499D75 /* Images.xcassets */; };
+		2E1AF92019E3352100499D75 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E1AF91E19E3352100499D75 /* LaunchScreen.xib */; };
+		2E1AF92C19E3352100499D75 /* PetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1AF92B19E3352100499D75 /* PetalTests.swift */; };
+		2E236C9D1A2CE784009CEACB /* GardenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E236C9C1A2CE784009CEACB /* GardenViewController.swift */; };
+		2E28B65F19ECAA77002593C1 /* pluck-short.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E28B65D19ECAA77002593C1 /* pluck-short.mp3 */; };
+		2E28B66019ECAA77002593C1 /* route29.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E28B65E19ECAA77002593C1 /* route29.mp3 */; };
+		2E38F5011A2CF431001628EF /* PlantFlowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E38F5001A2CF431001628EF /* PlantFlowerViewController.swift */; };
+		2E8C3BC71A350AC000473D04 /* GardenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C3BC61A350AC000473D04 /* GardenTableViewController.swift */; };
+		2E8C3BCF1A350E0100473D04 /* GardenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C3BCE1A350E0100473D04 /* GardenTableViewCell.swift */; };
+		2EBAA2981A2BF4A400EFC29F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA2971A2BF4A400EFC29F /* AudioToolbox.framework */; };
+		2EBAA29A1A2BF4AA00EFC29F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA2991A2BF4AA00EFC29F /* Foundation.framework */; };
+		2EBAA29C1A2BF4B000EFC29F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA29B1A2BF4B000EFC29F /* CoreGraphics.framework */; };
+		2EBAA29E1A2BF4B600EFC29F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA29D1A2BF4B600EFC29F /* CoreLocation.framework */; };
+		2EBAA2A01A2BF4BE00EFC29F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA29F1A2BF4BE00EFC29F /* libz.dylib */; };
+		2EBAA2A21A2BF4D700EFC29F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA2A11A2BF4D700EFC29F /* MobileCoreServices.framework */; };
+		2EBAA2A41A2BF4E000EFC29F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA2A31A2BF4E000EFC29F /* QuartzCore.framework */; };
+		2EBAA2A61A2BF4E700EFC29F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA2A51A2BF4E700EFC29F /* Security.framework */; };
+		2EBAA2A81A2BF4EC00EFC29F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA2A71A2BF4EC00EFC29F /* StoreKit.framework */; };
+		2EBAA2AA1A2BF4F200EFC29F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA2A91A2BF4F200EFC29F /* SystemConfiguration.framework */; };
+		2EBAA2B01A2BF56F00EFC29F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA2AC1A2BF56F00EFC29F /* Bolts.framework */; };
+		2EBAA2B11A2BF56F00EFC29F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA2AD1A2BF56F00EFC29F /* Parse.framework */; };
+		2EBAA2B21A2BF56F00EFC29F /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA2AE1A2BF56F00EFC29F /* ParseFacebookUtils.framework */; };
+		2EBAA2B31A2BF56F00EFC29F /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA2AF1A2BF56F00EFC29F /* ParseUI.framework */; };
+		2EBAA2B51A2BF8B400EFC29F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBAA2B41A2BF8B400EFC29F /* CFNetwork.framework */; };
+		2EBAA2C01A2C1D5E00EFC29F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBAA2BF1A2C1D5E00EFC29F /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E1AF92619E3352100499D75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E1AF90819E3352100499D75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E1AF90F19E3352100499D75;
+			remoteInfo = Petal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E1AF91019E3352100499D75 /* Petal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1AF91419E3352100499D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E1AF91519E3352100499D75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E1AF91719E3352100499D75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E1AF91A19E3352100499D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E1AF91C19E3352100499D75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E1AF91F19E3352100499D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2E1AF92519E3352100499D75 /* PetalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1AF92A19E3352100499D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E1AF92B19E3352100499D75 /* PetalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetalTests.swift; sourceTree = "<group>"; };
+		2E236C9C1A2CE784009CEACB /* GardenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GardenViewController.swift; sourceTree = "<group>"; };
+		2E28B65D19ECAA77002593C1 /* pluck-short.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pluck-short.mp3"; sourceTree = "<group>"; };
+		2E28B65E19ECAA77002593C1 /* route29.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = route29.mp3; sourceTree = "<group>"; };
+		2E38F5001A2CF431001628EF /* PlantFlowerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantFlowerViewController.swift; sourceTree = "<group>"; };
+		2E8C3BC61A350AC000473D04 /* GardenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GardenTableViewController.swift; sourceTree = "<group>"; };
+		2E8C3BCE1A350E0100473D04 /* GardenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GardenTableViewCell.swift; sourceTree = "<group>"; };
+		2EBAA2971A2BF4A400EFC29F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2EBAA2991A2BF4AA00EFC29F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2EBAA29B1A2BF4B000EFC29F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2EBAA29D1A2BF4B600EFC29F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2EBAA29F1A2BF4BE00EFC29F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2EBAA2A11A2BF4D700EFC29F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2EBAA2A31A2BF4E000EFC29F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2EBAA2A51A2BF4E700EFC29F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2EBAA2A71A2BF4EC00EFC29F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2EBAA2A91A2BF4F200EFC29F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2EBAA2AC1A2BF56F00EFC29F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		2EBAA2AD1A2BF56F00EFC29F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		2EBAA2AE1A2BF56F00EFC29F /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		2EBAA2AF1A2BF56F00EFC29F /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		2EBAA2B41A2BF8B400EFC29F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2EBAA2B61A2BF97400EFC29F /* Petal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Petal-Bridging-Header.h"; sourceTree = "<group>"; };
+		2EBAA2BF1A2C1D5E00EFC29F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E1AF90D19E3352100499D75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EBAA2B51A2BF8B400EFC29F /* CFNetwork.framework in Frameworks */,
+				2EBAA2AA1A2BF4F200EFC29F /* SystemConfiguration.framework in Frameworks */,
+				2EBAA2A81A2BF4EC00EFC29F /* StoreKit.framework in Frameworks */,
+				2EBAA2B31A2BF56F00EFC29F /* ParseUI.framework in Frameworks */,
+				2EBAA2A61A2BF4E700EFC29F /* Security.framework in Frameworks */,
+				2EBAA2A41A2BF4E000EFC29F /* QuartzCore.framework in Frameworks */,
+				2EBAA2A21A2BF4D700EFC29F /* MobileCoreServices.framework in Frameworks */,
+				2EBAA2A01A2BF4BE00EFC29F /* libz.dylib in Frameworks */,
+				2EBAA29E1A2BF4B600EFC29F /* CoreLocation.framework in Frameworks */,
+				2EBAA29C1A2BF4B000EFC29F /* CoreGraphics.framework in Frameworks */,
+				2EBAA2B01A2BF56F00EFC29F /* Bolts.framework in Frameworks */,
+				2EBAA29A1A2BF4AA00EFC29F /* Foundation.framework in Frameworks */,
+				2EBAA2B11A2BF56F00EFC29F /* Parse.framework in Frameworks */,
+				2EBAA2981A2BF4A400EFC29F /* AudioToolbox.framework in Frameworks */,
+				2EBAA2B21A2BF56F00EFC29F /* ParseFacebookUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E1AF92219E3352100499D75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E1AF90719E3352100499D75 = {
+			isa = PBXGroup;
+			children = (
+				2EBAA2B41A2BF8B400EFC29F /* CFNetwork.framework */,
+				2EBAA2AB1A2BF56F00EFC29F /* parse-library-1.5.0 */,
+				2EBAA2A91A2BF4F200EFC29F /* SystemConfiguration.framework */,
+				2EBAA2A71A2BF4EC00EFC29F /* StoreKit.framework */,
+				2EBAA2A51A2BF4E700EFC29F /* Security.framework */,
+				2EBAA2A31A2BF4E000EFC29F /* QuartzCore.framework */,
+				2EBAA2A11A2BF4D700EFC29F /* MobileCoreServices.framework */,
+				2EBAA29F1A2BF4BE00EFC29F /* libz.dylib */,
+				2EBAA29D1A2BF4B600EFC29F /* CoreLocation.framework */,
+				2EBAA29B1A2BF4B000EFC29F /* CoreGraphics.framework */,
+				2EBAA2991A2BF4AA00EFC29F /* Foundation.framework */,
+				2EBAA2971A2BF4A400EFC29F /* AudioToolbox.framework */,
+				2E1AF91219E3352100499D75 /* Petal */,
+				2E1AF92819E3352100499D75 /* PetalTests */,
+				2E1AF91119E3352100499D75 /* Products */,
+				2EBAA2B61A2BF97400EFC29F /* Petal-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		2E1AF91119E3352100499D75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E1AF91019E3352100499D75 /* Petal.app */,
+				2E1AF92519E3352100499D75 /* PetalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E1AF91219E3352100499D75 /* Petal */ = {
+			isa = PBXGroup;
+			children = (
+				2E1AF91519E3352100499D75 /* AppDelegate.swift */,
+				2E1AF91719E3352100499D75 /* ViewController.swift */,
+				2E1AF91919E3352100499D75 /* Main.storyboard */,
+				2E236C9C1A2CE784009CEACB /* GardenViewController.swift */,
+				2EBAA2BF1A2C1D5E00EFC29F /* LoginViewController.swift */,
+				2E1AF91C19E3352100499D75 /* Images.xcassets */,
+				2E1AF91E19E3352100499D75 /* LaunchScreen.xib */,
+				2E1AF91319E3352100499D75 /* Supporting Files */,
+				2E38F5001A2CF431001628EF /* PlantFlowerViewController.swift */,
+				2E8C3BC61A350AC000473D04 /* GardenTableViewController.swift */,
+				2E8C3BCE1A350E0100473D04 /* GardenTableViewCell.swift */,
+			);
+			path = Petal;
+			sourceTree = "<group>";
+		};
+		2E1AF91319E3352100499D75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E28B65D19ECAA77002593C1 /* pluck-short.mp3 */,
+				2E28B65E19ECAA77002593C1 /* route29.mp3 */,
+				2E1AF91419E3352100499D75 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E1AF92819E3352100499D75 /* PetalTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E1AF92B19E3352100499D75 /* PetalTests.swift */,
+				2E1AF92919E3352100499D75 /* Supporting Files */,
+			);
+			path = PetalTests;
+			sourceTree = "<group>";
+		};
+		2E1AF92919E3352100499D75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E1AF92A19E3352100499D75 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EBAA2AB1A2BF56F00EFC29F /* parse-library-1.5.0 */ = {
+			isa = PBXGroup;
+			children = (
+				2EBAA2AC1A2BF56F00EFC29F /* Bolts.framework */,
+				2EBAA2AD1A2BF56F00EFC29F /* Parse.framework */,
+				2EBAA2AE1A2BF56F00EFC29F /* ParseFacebookUtils.framework */,
+				2EBAA2AF1A2BF56F00EFC29F /* ParseUI.framework */,
+			);
+			path = "parse-library-1.5.0";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E1AF90F19E3352100499D75 /* Petal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E1AF92F19E3352100499D75 /* Build configuration list for PBXNativeTarget "Petal" */;
+			buildPhases = (
+				2E1AF90C19E3352100499D75 /* Sources */,
+				2E1AF90D19E3352100499D75 /* Frameworks */,
+				2E1AF90E19E3352100499D75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Petal;
+			productName = Petal;
+			productReference = 2E1AF91019E3352100499D75 /* Petal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E1AF92419E3352100499D75 /* PetalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E1AF93219E3352100499D75 /* Build configuration list for PBXNativeTarget "PetalTests" */;
+			buildPhases = (
+				2E1AF92119E3352100499D75 /* Sources */,
+				2E1AF92219E3352100499D75 /* Frameworks */,
+				2E1AF92319E3352100499D75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E1AF92719E3352100499D75 /* PBXTargetDependency */,
+			);
+			name = PetalTests;
+			productName = PetalTests;
+			productReference = 2E1AF92519E3352100499D75 /* PetalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E1AF90819E3352100499D75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Jing Xiao";
+				TargetAttributes = {
+					2E1AF90F19E3352100499D75 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					2E1AF92419E3352100499D75 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 2E1AF90F19E3352100499D75;
+					};
+				};
+			};
+			buildConfigurationList = 2E1AF90B19E3352100499D75 /* Build configuration list for PBXProject "Petal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E1AF90719E3352100499D75;
+			productRefGroup = 2E1AF91119E3352100499D75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E1AF90F19E3352100499D75 /* Petal */,
+				2E1AF92419E3352100499D75 /* PetalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E1AF90E19E3352100499D75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E28B66019ECAA77002593C1 /* route29.mp3 in Resources */,
+				2E1AF91B19E3352100499D75 /* Main.storyboard in Resources */,
+				2E28B65F19ECAA77002593C1 /* pluck-short.mp3 in Resources */,
+				2E1AF92019E3352100499D75 /* LaunchScreen.xib in Resources */,
+				2E1AF91D19E3352100499D75 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E1AF92319E3352100499D75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E1AF90C19E3352100499D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8C3BC71A350AC000473D04 /* GardenTableViewController.swift in Sources */,
+				2E38F5011A2CF431001628EF /* PlantFlowerViewController.swift in Sources */,
+				2EBAA2C01A2C1D5E00EFC29F /* LoginViewController.swift in Sources */,
+				2E236C9D1A2CE784009CEACB /* GardenViewController.swift in Sources */,
+				2E8C3BCF1A350E0100473D04 /* GardenTableViewCell.swift in Sources */,
+				2E1AF91819E3352100499D75 /* ViewController.swift in Sources */,
+				2E1AF91619E3352100499D75 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E1AF92119E3352100499D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E1AF92C19E3352100499D75 /* PetalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E1AF92719E3352100499D75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E1AF90F19E3352100499D75 /* Petal */;
+			targetProxy = 2E1AF92619E3352100499D75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E1AF91919E3352100499D75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E1AF91A19E3352100499D75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E1AF91E19E3352100499D75 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E1AF91F19E3352100499D75 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E1AF92D19E3352100499D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E1AF92E19E3352100499D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E1AF93019E3352100499D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.5.0",
+				);
+				INFOPLIST_FILE = Petal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Petal-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E1AF93119E3352100499D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.5.0",
+				);
+				INFOPLIST_FILE = Petal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Petal-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		2E1AF93319E3352100499D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PetalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Petal.app/Petal";
+			};
+			name = Debug;
+		};
+		2E1AF93419E3352100499D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PetalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Petal.app/Petal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E1AF90B19E3352100499D75 /* Build configuration list for PBXProject "Petal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E1AF92D19E3352100499D75 /* Debug */,
+				2E1AF92E19E3352100499D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E1AF92F19E3352100499D75 /* Build configuration list for PBXNativeTarget "Petal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E1AF93019E3352100499D75 /* Debug */,
+				2E1AF93119E3352100499D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E1AF93219E3352100499D75 /* Build configuration list for PBXNativeTarget "PetalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E1AF93319E3352100499D75 /* Debug */,
+				2E1AF93419E3352100499D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E1AF90819E3352100499D75 /* Project object */;
+}

@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Quu-Dt-Bup">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Garden Table View Controller-->
+        <scene sceneID="Nt6-Ya-t7R">
+            <objects>
+                <tableViewController id="NWH-BJ-nIv" customClass="GardenTableViewController" customModule="Petal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="506" sectionHeaderHeight="22" sectionFooterHeight="22" id="CLd-mM-vBx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="c5u-0y-aYw">
+                            <rect key="frame" x="0.0" y="-71" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky2" translatesAutoresizingMaskIntoConstraints="NO" id="vgw-BA-IEL">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="LSd-3w-rYL">
+                                    <rect key="frame" x="-7" y="0.0" width="334" height="568"/>
+                                    <gestureRecognizers/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHm-Pa-wi7">
+                                    <rect key="frame" x="104" y="333" width="113" height="118"/>
+                                    <state key="normal" title="gardenPatch1" image="soil">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <segue destination="lVB-nV-f8E" kind="modal" identifier="plantFlowerSegue" id="hf1-LJ-MTV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="flower" rowHeight="506" id="TSX-W6-619" customClass="GardenTableViewCell" customModule="Petal" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TSX-W6-619" id="H9o-Cw-ngt">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZy-8m-j94">
+                                            <rect key="frame" x="0.0" y="-71" width="320" height="568"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky2" translatesAutoresizingMaskIntoConstraints="NO" id="4hM-wN-jCT">
+                                                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="oCf-PE-b4i">
+                                                    <rect key="frame" x="-7" y="64" width="334" height="515"/>
+                                                    <gestureRecognizers/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="br8-CK-mZW">
+                                                    <rect key="frame" x="139" y="504" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8x-VD-lkV">
+                                                    <rect key="frame" x="104" y="364" width="113" height="118"/>
+                                                    <state key="normal" image="soil">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="showFlowerButton:" destination="NWH-BJ-nIv" eventType="touchUpInside" id="dr4-HF-63S"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <gestureRecognizers/>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="flowerButton" destination="i8x-VD-lkV" id="nk4-so-4R7"/>
+                                    <outlet property="friendName" destination="br8-CK-mZW" id="5LE-lR-eNY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NWH-BJ-nIv" id="U31-gm-6pf"/>
+                            <outlet property="delegate" destination="NWH-BJ-nIv" id="iQK-Kh-wka"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Slg-xB-vWH"/>
+                    <connections>
+                        <segue destination="UNU-p7-Cnm" kind="push" identifier="flower1Segue" id="b5H-D3-LEQ"/>
+                        <segue destination="3KK-IP-q05" kind="push" identifier="flower2Segue" id="JkT-7m-00g"/>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="flower3Segue" id="4M8-6r-5Uc"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkU-r1-Tty" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1169" y="204"/>
+        </scene>
+        <!--Plant Flower View Controller-->
+        <scene sceneID="mzZ-66-q0L">
+            <objects>
+                <viewController id="lVB-nV-f8E" customClass="PlantFlowerViewController" customModule="Petal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lng-Ts-csO"/>
+                        <viewControllerLayoutGuide type="bottom" id="wc1-Fh-9Ng"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u9I-4l-BPn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ltK-m5-xYR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mO-8J-ONl">
+                                        <rect key="frame" x="137" y="492" width="48" height="30"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="lVB-nV-f8E" eventType="touchUpInside" id="rmo-6E-ySn"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w4B-yF-qkz">
+                                        <rect key="frame" x="45" y="105" width="231" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flower Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qN-og-01z">
+                                        <rect key="frame" x="91" y="196" width="138" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aya-Ch-35d">
+                                        <rect key="frame" x="45" y="243" width="60" height="63"/>
+                                        <state key="normal" title="Button" image="flower1">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="flower1-selected"/>
+                                        <connections>
+                                            <action selector="flower1Button:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="Jl0-f8-7wZ"/>
+                                            <action selector="flower1Button:" destination="lVB-nV-f8E" eventType="touchUpInside" id="VMn-sO-gIT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X76-tq-y79">
+                                        <rect key="frame" x="130" y="243" width="60" height="63"/>
+                                        <state key="normal" title="Button" image="flower2">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="flower2-selected"/>
+                                        <connections>
+                                            <action selector="flower2Button:" destination="lVB-nV-f8E" eventType="touchUpInside" id="8pk-wc-GkH"/>
+                                            <action selector="flower2Button:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="sbI-db-7Be"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpf-a7-8TD">
+                                        <rect key="frame" x="216" y="243" width="60" height="63"/>
+                                        <state key="normal" title="Button" image="flower3">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="flower3-selected"/>
+                                        <connections>
+                                            <action selector="flower3Button:" destination="lVB-nV-f8E" eventType="touchUpInside" id="2R9-A2-85F"/>
+                                            <action selector="flower3Button:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="DBR-v8-fVr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbY-zX-gQf">
+                                        <rect key="frame" x="116" y="417" width="88" height="30"/>
+                                        <state key="normal" title="Plant!">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="plantButton:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="fM1-PW-tQq"/>
+                                            <action selector="plantButton:" destination="lVB-nV-f8E" eventType="touchUpInside" id="kyN-8j-wNh"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B65-Gj-R3u">
+                                        <rect key="frame" x="69" y="64" width="183" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UO6-KC-AgL">
+                                        <rect key="frame" x="38" y="372" width="244" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.73424762229999996" green="0.037032161090000001" blue="0.17216343740000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zgb-Z3-7sl"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="UO6-KC-AgL" id="4Ya-xm-M4Y"/>
+                        <outlet property="flower1" destination="Aya-Ch-35d" id="dj2-9f-p3Z"/>
+                        <outlet property="flower2" destination="X76-tq-y79" id="qNS-7u-3pD"/>
+                        <outlet property="flower3" destination="jpf-a7-8TD" id="zE2-SU-txg"/>
+                        <outlet property="friendTextField" destination="w4B-yF-qkz" id="Pjc-ls-4rY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eol-5p-CN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1162" y="893"/>
+        </scene>
+        <!--gardenView-->
+        <scene sceneID="u2h-qQ-VhA">
+            <objects>
+                <viewController title="gardenView" id="9rd-ND-lS7" customClass="GardenViewController" customModule="Petal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SLQ-p0-cT7"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Xv-3s-fIn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wi6-5S-IK7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky2" translatesAutoresizingMaskIntoConstraints="NO" id="Xfd-qH-g6Q">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="AtP-bl-lZ0">
+                                <rect key="frame" x="-7" y="64" width="334" height="515"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWe-7q-310">
+                                <rect key="frame" x="168" y="432" width="90" height="95"/>
+                                <state key="normal" title="gardenPatch2" image="soil">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="soilButton2:" destination="9rd-ND-lS7" eventType="touchUpInside" id="Wgd-kW-y97"/>
+                                    <segue destination="Nb2-74-RQ8" kind="push" identifier="plantFlowerSegue" id="ikU-ZC-jfC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLj-JU-rDX">
+                                <rect key="frame" x="63" y="351" width="90" height="95"/>
+                                <state key="normal" title="gardenPatch1" image="soil">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="soilButton1:" destination="9rd-ND-lS7" eventType="touchUpInside" id="Bny-4x-fSs"/>
+                                    <segue destination="Nb2-74-RQ8" kind="push" identifier="plantFlowerSegue" id="JiM-6C-Ds4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="GWj-i6-VXk" appends="YES" id="U1U-xJ-6qi"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="evq-8N-kxq"/>
+                    <connections>
+                        <outlet property="soilButton1" destination="KLj-JU-rDX" id="g1K-O7-g1C"/>
+                        <outlet property="soilButton2" destination="WWe-7q-310" id="dO7-GB-fcC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZ3-nU-zXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="GWj-i6-VXk">
+                    <connections>
+                        <action selector="swipeGarden:" destination="9rd-ND-lS7" id="Un5-8Q-cPo"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-268" y="-2643"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Qxg-RC-FoV">
+            <objects>
+                <viewController id="xRb-cX-CU6" customClass="LoginViewController" customModule="Petal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m6V-kV-LHg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lde-Wi-xss"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6ze-hS-zm5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Drd-7H-7wS">
+                                <rect key="frame" x="42" y="166" width="237" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BPu-xq-Tjv">
+                                <rect key="frame" x="42" y="215" width="237" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ll4-Dg-76V">
+                                <rect key="frame" x="104" y="269" width="112" height="30"/>
+                                <state key="normal" title="Sign Up / Log In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="xRb-cX-CU6" eventType="touchUpInside" id="U66-1U-RI9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up / Log In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3H-Qr-M6M">
+                                <rect key="frame" x="42" y="131" width="237" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.73424762229999996" green="0.037032161090000001" blue="0.17216343740000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e3z-Um-xLG"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="Q3H-Qr-M6M" id="TOh-ZU-Q6f"/>
+                        <outlet property="passwordTextField" destination="BPu-xq-Tjv" id="pTM-0F-rej"/>
+                        <outlet property="usernameTextField" destination="Drd-7H-7wS" id="jtN-hW-Ir8"/>
+                        <segue destination="NWH-BJ-nIv" kind="push" identifier="loggedInSegue" id="3iS-cp-SWh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKc-LK-09v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1573" y="217"/>
+        </scene>
+        <!--Plant Flower View Controller-->
+        <scene sceneID="0w5-H8-jeJ">
+            <objects>
+                <viewController id="Nb2-74-RQ8" customClass="PlantFlowerViewController" customModule="Petal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1KP-lE-C3u"/>
+                        <viewControllerLayoutGuide type="bottom" id="jBP-1f-phi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sDe-dE-AZv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZdQ-fF-tL0">
+                                <rect key="frame" x="45" y="158" width="231" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flower Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzK-XI-8zD">
+                                <rect key="frame" x="91" y="249" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esh-6T-uxL">
+                                <rect key="frame" x="45" y="296" width="60" height="63"/>
+                                <state key="normal" title="Button" image="flower1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="flower1-selected"/>
+                                <connections>
+                                    <action selector="flower1Button:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="BlN-AO-KCN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKa-kP-SL1">
+                                <rect key="frame" x="130" y="296" width="60" height="63"/>
+                                <state key="normal" title="Button" image="flower2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="flower2-selected"/>
+                                <connections>
+                                    <action selector="flower2Button:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="WdJ-0M-Nlb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-ga-NG5">
+                                <rect key="frame" x="216" y="296" width="60" height="63"/>
+                                <state key="normal" title="Button" image="flower3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="flower3-selected"/>
+                                <connections>
+                                    <action selector="flower3Button:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="AHF-qa-cLv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awh-pQ-y1K">
+                                <rect key="frame" x="116" y="470" width="88" height="30"/>
+                                <state key="normal" title="Plant!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="plantButton:" destination="Nb2-74-RQ8" eventType="touchUpInside" id="9n7-U1-ZTb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msU-Hx-5Zw">
+                                <rect key="frame" x="69" y="117" width="183" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7v-f1-FVy">
+                                <rect key="frame" x="38" y="425" width="244" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.73424762229999996" green="0.037032161090000001" blue="0.17216343740000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vlp-WP-nFR"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="A7v-f1-FVy" id="Xhd-3E-arv"/>
+                        <outlet property="flower1" destination="Esh-6T-uxL" id="wFk-EQ-ttv"/>
+                        <outlet property="flower2" destination="HKa-kP-SL1" id="ePm-6Q-wFD"/>
+                        <outlet property="flower3" destination="BrB-ga-NG5" id="HgV-J4-B19"/>
+                        <outlet property="friendTextField" destination="ZdQ-fF-tL0" id="gnm-x8-LBu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WsY-Ya-QAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-374" y="-1534"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Petal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rxu-1S-RKU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky2" translatesAutoresizingMaskIntoConstraints="NO" id="hJl-9l-FNn">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="576"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.84999999999999987" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="2nf-n1-H6D">
+                                        <rect key="frame" x="-5" y="0.0" width="331" height="568"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stalk" translatesAutoresizingMaskIntoConstraints="NO" id="S63-zy-BrP">
+                                        <rect key="frame" x="155" y="193" width="11" height="446"/>
+                                    </imageView>
+                                    <imageView alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal3-3" translatesAutoresizingMaskIntoConstraints="NO" id="J36-mk-4V1">
+                                        <rect key="frame" x="150" y="211" width="84" height="110"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="MaM-gy-4qH" appends="YES" id="JGp-2i-6gP"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal2-3" translatesAutoresizingMaskIntoConstraints="NO" id="SjI-hs-Ya0">
+                                        <rect key="frame" x="165" y="185" width="115" height="71"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="wHe-KN-pLL" appends="YES" id="gNm-NG-bjk"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal1-3" translatesAutoresizingMaskIntoConstraints="NO" id="KMG-zf-Kpw">
+                                        <rect key="frame" x="159" y="107" width="86" height="100"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="fip-Rj-RPA" appends="YES" id="dwL-eJ-pwq"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal7-3" translatesAutoresizingMaskIntoConstraints="NO" id="F2f-Lv-0LV">
+                                        <rect key="frame" x="119" y="87" width="64" height="126"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Zwg-6m-lGh" appends="YES" id="iDy-9r-11y"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal6-3" translatesAutoresizingMaskIntoConstraints="NO" id="h7n-T0-td0">
+                                        <rect key="frame" x="40" y="128" width="111" height="85"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="dCb-Rc-FS2" appends="YES" id="qUQ-uD-r8A"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal5-3" translatesAutoresizingMaskIntoConstraints="NO" id="noK-Y2-C31">
+                                        <rect key="frame" x="40" y="198" width="117" height="74"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="3LH-6x-OSs" appends="YES" id="9pm-ok-3uY"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal4-3" translatesAutoresizingMaskIntoConstraints="NO" id="KR7-Ql-cni">
+                                        <rect key="frame" x="95" y="215" width="75" height="111"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Aik-XU-te2" appends="YES" id="j8A-Vh-7a2"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flower_center3" translatesAutoresizingMaskIntoConstraints="NO" id="Qpg-Kw-iZN">
+                                        <rect key="frame" x="141" y="193" width="38" height="39"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="7YB-fT-Gsa" appends="YES" id="KpQ-6c-nxx"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Juu-Mn-L35"/>
+                    <connections>
+                        <outlet property="background" destination="2nf-n1-H6D" id="67G-y1-oVM"/>
+                        <outlet property="flowerCenter" destination="Qpg-Kw-iZN" id="KTa-uF-kwc"/>
+                        <outlet property="flowerStalk" destination="S63-zy-BrP" id="Y8R-Fx-tNh"/>
+                        <outlet property="petal1" destination="KR7-Ql-cni" id="jAW-v9-x4P"/>
+                        <outlet property="petal2" destination="J36-mk-4V1" id="iOM-US-cn0"/>
+                        <outlet property="petal3" destination="SjI-hs-Ya0" id="3KJ-aJ-sp3"/>
+                        <outlet property="petal4" destination="KMG-zf-Kpw" id="UP8-mk-U78"/>
+                        <outlet property="petal5" destination="F2f-Lv-0LV" id="dse-gw-RDB"/>
+                        <outlet property="petal6" destination="h7n-T0-td0" id="CpS-aS-FUA"/>
+                        <outlet property="petal7" destination="noK-Y2-C31" id="9Oj-at-OFP"/>
+                        <outlet property="sky" destination="hJl-9l-FNn" id="BAz-4n-0RP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Aik-XU-te2">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="fG5-M2-gyX"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="MaM-gy-4qH">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="xUU-hb-GyV"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="wHe-KN-pLL">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="mEk-jq-WHh"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="fip-Rj-RPA">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="Thw-yT-7Fx"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Zwg-6m-lGh">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="QQP-RD-XAl"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="dCb-Rc-FS2">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="yBN-DC-EnS"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3LH-6x-OSs">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="KzJ-Ah-8ye"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="7YB-fT-Gsa">
+                    <connections>
+                        <action selector="handleRegrow:" destination="vXZ-lx-hvc" id="08g-4N-pbt"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-875" y="-757"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IxV-Uf-vtp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Quu-Dt-Bup" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qpB-Ln-HnP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xRb-cX-CU6" kind="relationship" relationship="rootViewController" id="ZfM-da-nc7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wEW-S1-Vsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1980" y="217"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="h4d-2r-Ln1">
+            <objects>
+                <viewController id="UNU-p7-Cnm" customClass="ViewController" customModule="Petal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lFc-vS-6ym"/>
+                        <viewControllerLayoutGuide type="bottom" id="o3R-Ca-th2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o1o-b5-bDX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gb5-WR-zMT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky2" translatesAutoresizingMaskIntoConstraints="NO" id="JQG-oj-DgD">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="576"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="SeB-YI-4Q6">
+                                        <rect key="frame" x="-5" y="0.0" width="331" height="568"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stalk" translatesAutoresizingMaskIntoConstraints="NO" id="jqV-5t-1p7">
+                                        <rect key="frame" x="155" y="193" width="11" height="446"/>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal2" translatesAutoresizingMaskIntoConstraints="NO" id="FFM-IN-TiP">
+                                        <rect key="frame" x="155" y="171" width="118" height="78"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="LM4-PX-mJk" appends="YES" id="046-lY-EpN"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal3" translatesAutoresizingMaskIntoConstraints="NO" id="KHb-D9-O9A">
+                                        <rect key="frame" x="153" y="109" width="115" height="103"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="lA1-v7-gzn" appends="YES" id="VBf-rS-Cty"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal4" translatesAutoresizingMaskIntoConstraints="NO" id="Bmo-oo-0xK">
+                                        <rect key="frame" x="122" y="90" width="77" height="122"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="uz1-Wj-qnD" appends="YES" id="PoC-5k-lK0"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal5" translatesAutoresizingMaskIntoConstraints="NO" id="SFT-T5-1tW">
+                                        <rect key="frame" x="56" y="111" width="97" height="101"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="dAA-ff-0Ir" appends="YES" id="wcU-tq-tkI"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal6" translatesAutoresizingMaskIntoConstraints="NO" id="Ugo-93-Q1J">
+                                        <rect key="frame" x="50" y="193" width="111" height="76"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Zr6-lc-kR6" appends="YES" id="796-lS-gR7"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal7" translatesAutoresizingMaskIntoConstraints="NO" id="Zmm-oS-2N5">
+                                        <rect key="frame" x="99" y="204" width="75" height="119"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Of0-FU-zBL" appends="YES" id="O9M-iz-5uh"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal1" translatesAutoresizingMaskIntoConstraints="NO" id="BCb-u3-zGc">
+                                        <rect key="frame" x="147" y="204" width="107" height="111"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="S5b-fj-m4Y" appends="YES" id="lbf-n8-fsh"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flower_center" translatesAutoresizingMaskIntoConstraints="NO" id="xpa-oG-SGA">
+                                        <rect key="frame" x="138" y="187" width="44" height="45"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="P3z-wt-Wmi" appends="YES" id="vCh-FB-d6X"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9V6-ba-Va5"/>
+                    <connections>
+                        <outlet property="background" destination="SeB-YI-4Q6" id="kji-BD-dwt"/>
+                        <outlet property="flowerCenter" destination="xpa-oG-SGA" id="OS4-kg-2Jl"/>
+                        <outlet property="flowerStalk" destination="jqV-5t-1p7" id="m19-ch-7aE"/>
+                        <outlet property="petal1" destination="BCb-u3-zGc" id="2V8-Nw-sMU"/>
+                        <outlet property="petal2" destination="FFM-IN-TiP" id="fqz-T6-3n1"/>
+                        <outlet property="petal3" destination="KHb-D9-O9A" id="tIw-JX-j8F"/>
+                        <outlet property="petal4" destination="Bmo-oo-0xK" id="3lY-wb-bKd"/>
+                        <outlet property="petal5" destination="SFT-T5-1tW" id="ZdY-94-4da"/>
+                        <outlet property="petal6" destination="Ugo-93-Q1J" id="Gz9-n3-9qv"/>
+                        <outlet property="petal7" destination="Zmm-oS-2N5" id="tXg-gu-aAV"/>
+                        <outlet property="sky" destination="JQG-oj-DgD" id="zSQ-9q-lm6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Htt-at-VFh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="S5b-fj-m4Y">
+                    <connections>
+                        <action selector="handlePan:" destination="UNU-p7-Cnm" id="piv-tG-sRb"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="LM4-PX-mJk">
+                    <connections>
+                        <action selector="handlePan:" destination="UNU-p7-Cnm" id="uDg-eu-DEm"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="lA1-v7-gzn">
+                    <connections>
+                        <action selector="handlePan:" destination="UNU-p7-Cnm" id="JSw-64-e40"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="uz1-Wj-qnD">
+                    <connections>
+                        <action selector="handlePan:" destination="UNU-p7-Cnm" id="Ze6-uf-C6n"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="dAA-ff-0Ir">
+                    <connections>
+                        <action selector="handlePan:" destination="UNU-p7-Cnm" id="hEc-ng-ySY"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Zr6-lc-kR6">
+                    <connections>
+                        <action selector="handlePan:" destination="UNU-p7-Cnm" id="T8r-tB-N3f"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Of0-FU-zBL">
+                    <connections>
+                        <action selector="handlePan:" destination="UNU-p7-Cnm" id="Q1l-as-WFL"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="P3z-wt-Wmi">
+                    <connections>
+                        <action selector="handleRegrow:" destination="UNU-p7-Cnm" id="Zds-3M-dMj"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-736" y="-99"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ywj-us-csD">
+            <objects>
+                <viewController id="3KK-IP-q05" customClass="ViewController" customModule="Petal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Jd-8p-KFJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ch1-Au-DSx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gQs-7Q-EVz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ymg-FH-Yus">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky2" translatesAutoresizingMaskIntoConstraints="NO" id="1Q6-PM-Urf">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="576"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="ilk-MS-oy9">
+                                        <rect key="frame" x="-5" y="0.0" width="331" height="568"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stalk" translatesAutoresizingMaskIntoConstraints="NO" id="o9d-if-eqH">
+                                        <rect key="frame" x="155" y="193" width="11" height="446"/>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal1-2" translatesAutoresizingMaskIntoConstraints="NO" id="LFi-kY-FJT">
+                                        <rect key="frame" x="145" y="54" width="44" height="151"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="mEE-AL-yow" appends="YES" id="fIv-1H-X3u"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal7-2" translatesAutoresizingMaskIntoConstraints="NO" id="WoR-UK-qhh">
+                                        <rect key="frame" x="49" y="88" width="111" height="124"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="p7p-PV-AG6" appends="YES" id="cxr-Ac-Mtb"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal6-2" translatesAutoresizingMaskIntoConstraints="NO" id="wDQ-CC-6FB">
+                                        <rect key="frame" x="9" y="200" width="157" height="37"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="hdr-SU-IqB" appends="YES" id="fFx-TB-2bo"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal5-2" translatesAutoresizingMaskIntoConstraints="NO" id="DMO-Ei-rGD">
+                                        <rect key="frame" x="83" y="209" width="77" height="136"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="oIf-Ef-Vxz" appends="YES" id="UpB-0a-3xM"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal4-2" translatesAutoresizingMaskIntoConstraints="NO" id="BtM-TK-4zc">
+                                        <rect key="frame" x="155" y="205" width="88" height="140"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="CXa-nf-tfz" appends="YES" id="ONQ-gj-4Ae"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal3-2" translatesAutoresizingMaskIntoConstraints="NO" id="jbK-OB-9or">
+                                        <rect key="frame" x="149" y="193" width="149" height="51"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Sxd-ja-z8w" appends="YES" id="U6z-yB-hjj"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petal2-2" translatesAutoresizingMaskIntoConstraints="NO" id="pbW-a7-jqs">
+                                        <rect key="frame" x="155" y="113" width="133" height="88"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="cln-wz-6op" appends="YES" id="8af-zK-rT8"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flower_center2" translatesAutoresizingMaskIntoConstraints="NO" id="xsq-jz-6aV">
+                                        <rect key="frame" x="141" y="187" width="35" height="36"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="bHv-Uo-5t4" appends="YES" id="7Ap-jc-GA3"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3nr-H0-1pA"/>
+                    <connections>
+                        <outlet property="background" destination="ilk-MS-oy9" id="Gr3-rW-43J"/>
+                        <outlet property="flowerCenter" destination="xsq-jz-6aV" id="M5X-aa-hoh"/>
+                        <outlet property="flowerStalk" destination="o9d-if-eqH" id="5DJ-Um-VEH"/>
+                        <outlet property="petal1" destination="jbK-OB-9or" id="IXO-XL-0hq"/>
+                        <outlet property="petal2" destination="pbW-a7-jqs" id="QEJ-9N-HNa"/>
+                        <outlet property="petal3" destination="LFi-kY-FJT" id="78X-Nf-avA"/>
+                        <outlet property="petal4" destination="WoR-UK-qhh" id="0Ww-wN-ZJI"/>
+                        <outlet property="petal5" destination="wDQ-CC-6FB" id="ziz-Bv-FqL"/>
+                        <outlet property="petal6" destination="DMO-Ei-rGD" id="xXP-Z6-ajy"/>
+                        <outlet property="petal7" destination="BtM-TK-4zc" id="Va0-A0-3kk"/>
+                        <outlet property="sky" destination="1Q6-PM-Urf" id="l1s-FO-2hQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgT-kw-I1p" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Sxd-ja-z8w">
+                    <connections>
+                        <action selector="handlePan:" destination="3KK-IP-q05" id="5YT-fS-hl9"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="cln-wz-6op">
+                    <connections>
+                        <action selector="handlePan:" destination="3KK-IP-q05" id="Rgm-Dy-hoC"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="mEE-AL-yow">
+                    <connections>
+                        <action selector="handlePan:" destination="3KK-IP-q05" id="UUo-nP-V2R"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="p7p-PV-AG6">
+                    <connections>
+                        <action selector="handlePan:" destination="3KK-IP-q05" id="UcL-k5-g9e"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="hdr-SU-IqB">
+                    <connections>
+                        <action selector="handlePan:" destination="3KK-IP-q05" id="V28-v0-nq6"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="oIf-Ef-Vxz">
+                    <connections>
+                        <action selector="handlePan:" destination="3KK-IP-q05" id="bLe-cz-tLi"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="CXa-nf-tfz">
+                    <connections>
+                        <action selector="handlePan:" destination="3KK-IP-q05" id="zdI-rJ-sh6"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="bHv-Uo-5t4">
+                    <connections>
+                        <action selector="handleRegrow:" destination="3KK-IP-q05" id="3VB-Eb-VKU"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-331" y="-11"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flower1" width="842" height="929"/>
+        <image name="flower1-selected" width="842" height="929"/>
+        <image name="flower2" width="974" height="960"/>
+        <image name="flower2-selected" width="974" height="960"/>
+        <image name="flower3" width="859" height="920"/>
+        <image name="flower3-selected" width="859" height="920"/>
+        <image name="flower_center" width="398" height="396"/>
+        <image name="flower_center2" width="143" height="146"/>
+        <image name="flower_center3" width="142" height="139"/>
+        <image name="grass" width="1876" height="2463"/>
+        <image name="petal1" width="837" height="735"/>
+        <image name="petal1-2" width="138" height="514"/>
+        <image name="petal1-3" width="371" height="357"/>
+        <image name="petal2" width="984" height="636"/>
+        <image name="petal2-2" width="443" height="280"/>
+        <image name="petal2-3" width="442" height="270"/>
+        <image name="petal3" width="865" height="854"/>
+        <image name="petal3-2" width="505" height="159"/>
+        <image name="petal3-3" width="365" height="397"/>
+        <image name="petal4" width="560" height="1025"/>
+        <image name="petal4-2" width="250" height="462"/>
+        <image name="petal4-3" width="265" height="445"/>
+        <image name="petal5" width="838" height="846"/>
+        <image name="petal5-2" width="229" height="473"/>
+        <image name="petal5-3" width="437" height="299"/>
+        <image name="petal6" width="850" height="575"/>
+        <image name="petal6-2" width="521" height="129"/>
+        <image name="petal6-3" width="421" height="324"/>
+        <image name="petal7" width="525" height="1009"/>
+        <image name="petal7-2" width="350" height="389"/>
+        <image name="petal7-3" width="222" height="492"/>
+        <image name="sky2" width="1678" height="1711"/>
+        <image name="soil" width="870" height="821"/>
+        <image name="stalk" width="82" height="2344"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="JiM-6C-Ds4"/>
+    </inferredMetricsTieBreakers>
+</document>
